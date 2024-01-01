@@ -1,11 +1,19 @@
-import austinImg from "../../assets/austin.jpg"
-import dallasImg from "../../assets/dallas.jpg"
-import elpasoImg from "../../assets/el-paso-texas.jpg"
-import galvestonImg from "../../assets/Galveston-Island.jpg"
-import houstonImg from "../../assets/houston.jpg"
-import sanantonioImg from "../../assets/san antonio.jpg"
-import wacoImg from "../../assets/waco.jpg"
-
+import shoePurseImg from "../../assets/womens/shoe-purse.jpg"
+import yellowheel from "../../assets/womens/shoes/yellow-satin-heel.jpg"
+import beigeheel from "../../assets/womens/shoes/beige-satin-heel-item.jpg"
+import beigepump from "../../assets/womens/shoes/beige-heel-pump-item.jpg"
+import womensSweater from "../../assets/womens/tops/womens-sweater-item.jpg"
+import womensJeans from '../../assets/womens/bottoms/jeans-item.jpg'
+import jewelry from '../../assets/womens/accessories/jewelry.jpg'
+import womenswear from '../../assets/womens/womenswear.jpg'
+//mens
+import menswear from '../../assets/mens/menswear.jpg'
+import mensbluecanvas from '../../assets/mens/shoes/blue-tennis-canvas-item.jpg'
+import mensyellowcanvas from '../../assets/mens/shoes/canvas-shoe-item.jpg'
+import mensloafers from '../../assets/mens/shoes/loafer-gator.jpg'
+import mensuit from '../../assets/mens/suits/men-blazer-suits.jpg'
+import menjeans from '../../assets/mens/bottoms/mens-jeans.jpg'
+import menjeans2 from '../../assets/mens/bottoms/jeans-hangers.jpg'
 export const pages: any[] = [
   {
     link: "page-1"
@@ -17,81 +25,112 @@ export const pages: any[] = [
     link: "page-3"
   },
   {
-    link: "page-5",
+    link: "page-4",
   },
 ];
 
 export const pageData = [
   {
-    name: "page-1",
-    population: "974,447",
-    date_established: "1989",
-    region: "hill country texas",
-    classification: "urban",
-    avg_income: "$78,000",
-    details:"",
-    isCapital: true,
-    sights: [
+    name: "page 1",
+    classification: "",
+    details:"Details about page 1",
+    items: [
       {
-        name:"Capital building",
-        description: ""
+        name:"product 1",
+        description: "item we sell",
+        image: yellowheel
       },
       {
-        name:"Lady bird lake",
-        description: ""
+        name:"product 2",
+        description: "item we sell",
+        image: beigeheel
+      },
+      {
+        name:"product 3",
+        description: "item we sell",
+        image: beigepump
+      },
+
+    ],
+    more_details:"lorem ipsum tango bravo",
+    image: shoePurseImg.src
+  },
+  {
+    name: "page 2",
+    classification: "womens",
+    details:"Details about page 2",
+    items: [
+      {
+        name:"product 1",
+        description: "items we sell",
+        image: womensSweater
+
+      },
+      {
+        name:"product 2",
+        description: "items we sell",
+        image: womensJeans
+
+      },
+      {
+        name:"product 3",
+        description: "items we sell",
+        image: shoePurseImg
+      },
+    ],
+    more_details:"lorem ipsum tango bravo",
+    image: womenswear.src
+  },
+  {
+    name: "page 3",
+    classification: "nens",
+    details:"Details about page 3",
+    items: [
+      {
+        name:"product 1",
+        description: "item we sell",
+        image: mensloafers
+
+      },
+      {
+        name:"product 2",
+        description: "item we sell",
+        image: mensyellowcanvas
+
+      },
+      {
+        name:"product 3",
+        description: "item we sell",
+        image: mensbluecanvas
       },
 
     ],
     more_details:"",
-    image: '../../assets/shoe-purse.jpg'
+    image: menswear.src
   },
   {
-    name: "dallas",
-    population: "1,299,544",
-    date_established: "1856",
-    region: "north texas",
-    classification: "urban",
-    avg_income: "$85,000",
-    details:"",
-    isCapital: false,
-    sights: [
+    name: "page 4",
+    classification: "mens",
+    details:"Details about page 4",
+    items: [
       {
-        name:"",
-        description: ""
-      },
-      {
-        name:"",
-        description: ""
-      },
-      {
-        name:"",
-        description: ""
-      },
-    ],
-    more_details:"",
-    image:dallasImg
-  },
-  {
-    name: "el paso",
-    population: "677,456",
-    date_established: "1873",
-    region: "west texas",
-    classification: "urban",
-    avg_income: "$51,000",
-    details:"Details about El Paso",
-    isCapital: false,
-    sights: [
-      {
-        name:"",
-        description: ""
-      },
-      {
-        name:"",
-        description: ""
-      },
+        name:"product 1",
+        description: "items we sell",
+        image: mensuit,
 
+      },
+      {
+        name:"product 2",
+        description: "items we sell",
+        image: menjeans,
+      },
+      {
+        name:"product 3",
+        description: "items we sell",
+        image: menjeans2,
+      },
     ],
-    more_details:"",
-    image:elpasoImg
+    more_details:"Lorem ipsum tango bravo",
+    image: menswear.src
   },
 ]

@@ -1,4 +1,4 @@
-import logo from "@/assets/texasflag.jpg";
+import logo from "@/assets/logoipsum-287.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { pages } from "../../pages/api/dummydata";
