@@ -6,9 +6,9 @@ export default function Footer() {
   return (
     <footer className="footer-content">
       <ul className="footer-inner-content">
-        <li>contact us</li>
-        <li>some other info</li>
-        <li>
+        <li key="contact">contact us</li>
+        <li key="etc">some other info</li>
+        <li key="logo">
           {" "}
           <Image src={logo} alt="logo" width={100} height={175} className="" />
         </li>

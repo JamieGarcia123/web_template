@@ -3,7 +3,7 @@ import Head from "next/head";
 import state from "../assets/texasflag.jpg";
 import Image from "next/image";
 import ResuableModal from "../shared/components/modal";
-import { cityData } from "./api/dummydata";
+import { pageData } from "./api/dummydata";
 import Link from "next/link";
 // import { useCountdown } from "../useCountdown";
 import { useState } from "react";
@@ -73,7 +73,7 @@ export default function Home() {
        </section> 
      
       <aside className="content">
-      <table  id="cityData">
+      <table  id="pageData">
         <thead style={{textAlign: "center"}}>Texas Cities</thead>
           <tbody>
           <tr>
@@ -81,7 +81,7 @@ export default function Home() {
             <th>Population</th>
             <th>Income</th>
             </tr>
-            {cityData.map((x) => (<><tr><td style={{textTransform: "capitalize"}}>{x.name}</td><td>{x.population}</td><td>{x.avg_income}</td></tr></>))}
+            {pageData.map((x) => (<><tr><td style={{textTransform: "capitalize"}}>{x.name}</td><td>{x.population}</td><td>{x.avg_income}</td></tr></>))}
             </tbody>
             </table>
         <h2>What makes us great...</h2>

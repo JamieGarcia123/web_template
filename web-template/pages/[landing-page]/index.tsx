@@ -1,12 +1,12 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { cityData } from "../api/dummydata";
+import { pageData } from "../api/dummydata";
 import Image from "next/image";
 
 export default function Service() {
   const router = useRouter()
   const city = router.asPath.replace("/", "").replace("%20", " ").replace("-", " ")
-  const cityDetails = cityData.filter((x) => x.name === city); 
+  const cityDetails = pageData.filter((x) => x.name === city); 
  
   return (
     <>

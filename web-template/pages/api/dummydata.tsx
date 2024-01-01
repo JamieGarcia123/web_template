@@ -6,33 +6,24 @@ import houstonImg from "../../assets/houston.jpg"
 import sanantonioImg from "../../assets/san antonio.jpg"
 import wacoImg from "../../assets/waco.jpg"
 
-export const cities: any[] = [
+export const pages: any[] = [
   {
-    link: "austin",
+    link: "page-1"
   },
   {
-    link: "dallas"
+    link: "page-2"
   },
   {
-    link: "el-paso"
+    link: "page-3"
   },
   {
-    link: "galveston"
-  },
-  {
-    link: "houston",
-  },
-  {
-    link: "san-antonio",
-  }, 
-  {
-    link: "waco",
+    link: "page-5",
   },
 ];
 
-export const cityData = [
+export const pageData = [
   {
-    name: "austin",
+    name: "page-1",
     population: "974,447",
     date_established: "1989",
     region: "hill country texas",
@@ -52,7 +43,7 @@ export const cityData = [
 
     ],
     more_details:"",
-    image: '../../assets/austin.jpgImg'
+    image: '../../assets/shoe-purse.jpg'
   },
   {
     name: "dallas",
@@ -103,108 +94,4 @@ export const cityData = [
     more_details:"",
     image:elpasoImg
   },
-  {
-    name: "galveston",
-    population: "53,089",
-    date_established: "1939",
-    region: "gulf coast",
-    classification: "",
-    avg_income: "$42,000",
-    details:"A city on an Island",
-    isCapital: false,
-    sights: [
-      {
-      name:"",
-      description: ""
-      },
-      {
-      name:"",
-      description: ""
-      },
-      {
-      name:"",
-      description: ""
-      },
-    ],
-    more_details:"",
-    image: galvestonImg
-  },
-  {
-    name:"houston",
-    population: "2,302,878",
-    date_established: "1837",
-    region: "gulf coast",
-    classification: "urban",
-    avg_income: "$57,000",
-    details:"",
-    isCapital: false,
-    sights: [
-      {
-      name:"",
-      description: ""
-      },
-      {
-      name:"",
-      description: ""
-      },
-      {
-      name:"",
-      description: ""
-      },
-    ],
-    more_details:"",
-    image: houstonImg
-  },
-  {
-    name: "san antonio",
-    population: "1,472,909",
-    date_established: "1837",
-    region: "south texas",
-    classification: "urban",
-    avg_income: "$48,000",
-    details:"Home of the Alamo",
-    isCapital: false,
-    sights: [
-      {
-      name:"Alamo",
-      description: ""
-      }, {
-      name:"Tower of Americas",
-      description: ""
-      }, {
-      name:"",
-      description: "Six Flags Fiesta Texas"
-      }, {
-      name:"",
-      description: ""
-      }, 
-      {  
-      name:"",
-      description: ""
-      },
-    ],
-    more_details:"",
-    image: sanantonioImg, 
-  },
-  {
-    name: "waco",
-    population: "143,984",
-    date_established: "1856",
-    region: "central texas",
-    classification: "rural",
-    avg_income: "",
-    details:"Home of the Alamo",
-    isCapital: false,
-    sights: [
-      {
-      name:"Dr. Pepper Museum",
-      description: ""
-      }, {
-      name:"",
-      description: ""
-      }, 
-    ],
-    more_details:"",
-    image: wacoImg, 
-  }
 ]
