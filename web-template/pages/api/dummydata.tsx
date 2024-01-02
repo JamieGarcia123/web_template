@@ -38,17 +38,20 @@ export const pageData = [
       {
         name:"product 1",
         description: "item we sell",
-        image: yellowheel
+        image: yellowheel,
+        cost: 49.99
       },
       {
         name:"product 2",
         description: "item we sell",
-        image: beigeheel
+        image: beigeheel,
+        cost: 49.99
       },
       {
         name:"product 3",
         description: "item we sell",
-        image: beigepump
+        image: beigepump,
+        cost: 55.99
       },
 
     ],
@@ -63,19 +66,20 @@ export const pageData = [
       {
         name:"product 1",
         description: "items we sell",
-        image: womensSweater
-
+        image: womensSweater,
+        cost: 49.99
       },
       {
         name:"product 2",
         description: "items we sell",
-        image: womensJeans
-
+        image: womensJeans,
+        cost: 79.99,
       },
       {
         name:"product 3",
         description: "items we sell",
-        image: shoePurseImg
+        image: shoePurseImg,
+        cost: 85.99
       },
     ],
     more_details:"lorem ipsum tango bravo",
@@ -83,25 +87,26 @@ export const pageData = [
   },
   {
     name: "page 3",
-    classification: "nens",
+    classification: "mens",
     details:"Details about page 3",
     items: [
       {
         name:"product 1",
         description: "item we sell",
-        image: mensloafers
-
+        image: mensloafers,
+        cost: 149.99
       },
       {
         name:"product 2",
         description: "item we sell",
-        image: mensyellowcanvas
-
+        image: mensyellowcanvas,
+        cost: 29.99
       },
       {
         name:"product 3",
         description: "item we sell",
-        image: mensbluecanvas
+        image: mensbluecanvas,
+        cost: 29.99
       },
 
     ],
@@ -117,17 +122,21 @@ export const pageData = [
         name:"product 1",
         description: "items we sell",
         image: mensuit,
+        cost: 199.99
 
       },
       {
         name:"product 2",
         description: "items we sell",
         image: menjeans,
+        cost: 79.99
+
       },
       {
         name:"product 3",
         description: "items we sell",
         image: menjeans2,
+        cost: 49.99
       },
     ],
     more_details:"Lorem ipsum tango bravo",

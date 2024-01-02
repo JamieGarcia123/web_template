@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { pageData } from "../api/dummydata";
 import Image from "next/image";
 import PageCard from "@/shared/components/pageCard";
+import Link from "next/link";
 export default function Service() {
   const router = useRouter()
   const page = router.asPath.replace("/", "").replace("%20", " ").replace("-", " ")
@@ -49,9 +50,9 @@ export default function Service() {
         <div className="inner-content">  
         <ul>
           {pageDetails[0]?.items?.map((x) => 
-            <li key={x.name}> <div className="page-card">
+            <Link href={`/${page}/${x.name}`}><li key={x.name}> <div className="page-card">
             <Image src={x.image} width={250} height={250} alt="product" className="" />
-        </div><p>{x.name}</p><p>{x.description}</p></li>)}
+        </div><p>{x.name}</p><p>{x.description}</p></li></Link>)}
             </ul>
         </div>          
         <h2>More details</h2>

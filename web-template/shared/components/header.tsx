@@ -12,7 +12,7 @@ function Header() {
      <ul className="nav-inner-content">
         {pages.map((pages) => (
           <li key={`${pages.name}`}>
-            <Link href={`${pages.link}`}>{pages.link.replace("-", " ")}</Link>
+            <Link href={`/${pages.link}`}>{pages.link.replace("-", " ")}</Link>
           </li>
         ))}
       </ul>
